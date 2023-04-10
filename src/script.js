@@ -1,8 +1,5 @@
-// import './style.css'
 import "./style.scss";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import * as dat from "dat.gui";
 
 const textureLoader = new THREE.TextureLoader();
 const texture = new textureLoader.load("/textures/rock.jpg");
@@ -47,23 +44,6 @@ scene.add(pointLight1);
 const pointLight2 = new THREE.PointLight(0x26daff, 10);
 pointLight2.position.set(1, -1.05, -0.12);
 scene.add(pointLight2);
-
-// const light1 = gui.addFolder('light1')
-// const light2 = gui.addFolder('light2')
-
-// light1.add(pointLight1.position, 'x').min(-6).max(6).step(0.01)
-// light1.add(pointLight1.position, 'y').min(-4).max(4).step(0.01)
-// light1.add(pointLight1.position, 'z').min(-4).max(4).step(0.01)
-// light1.add(pointLight1, 'intensity').min(0).max(20).step(0.01)
-
-// light2.add(pointLight2.position, 'x').min(-6).max(6).step(0.01)
-// light2.add(pointLight2.position, 'y').min(-6).max(6).step(0.01)
-// light2.add(pointLight2.position, 'z').min(-6).max(6).step(0.01)
-// light2.add(pointLight2, 'intensity').min(0).max(20).step(0.01)
-
-// const pointLightHelper1 = new THREE.PointLightHelper(pointLight1, 1)
-// const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
-// scene.add(pointLightHelper1, pointLightHelper2)
 
 /**
  * Sizes
@@ -162,15 +142,3 @@ const tick = () => {
 };
 
 tick();
-
-// ================================================================= //
-
-// CSS-DOM
-
-// import fullpage from 'fullpage.js';
-
-// // Initializing it
-// new fullpage('#fullpage', {
-//     navigation: true,
-//     // sectionsColor:['#ff5f45', '#0798ec', '#fc6c7c', 'grey']
-// });
