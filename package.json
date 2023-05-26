@@ -2,12 +2,14 @@
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
+    "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
     "start": "node server.js"
   },
   "dependencies": {
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.5",
+    "@types/three": "^0.150.1",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
