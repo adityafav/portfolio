@@ -1,7 +1,7 @@
 import "./style.scss";
 import * as THREE from "three";
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'dat.gui'
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+// import * as dat from 'dat.gui'
 
 const textureLoader = new THREE.TextureLoader();
 const texture = new textureLoader.load("/textures/rock.jpg");
@@ -163,7 +163,8 @@ const tick = () => {
 
 tick();
 
-// SINE WAVE
+
+// SINE WAVES
 const dotGeometry = new THREE.BufferGeometry(1);
 const dotMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.02, sizeAttenuation: true });
 
