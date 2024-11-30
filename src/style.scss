@@ -8,12 +8,11 @@
 
 html,
 body {
-  height: 100vh;
   color: #ffffff;
 }
 
-body {
-  overflow-x: hidden;
+body.visible {
+  transition: opacity 1s ease-in-out;
 }
 
 .webgl {

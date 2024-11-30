@@ -219,3 +219,10 @@ function animate() {
 }
 
 animate();
+
+
+setTimeout(function() {
+  var element = document.querySelector('body');
+  element.style.opacity = 1;
+  element.classList.add('visible');
+}, 2000);
